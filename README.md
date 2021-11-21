@@ -1,2 +1,0 @@
-# InternetShop
-The universities project.

@@ -28,8 +28,9 @@ CREATE TABLE `goods` (
   `type` varchar(20) DEFAULT NULL,
   `amount` int DEFAULT NULL,
   `price` int DEFAULT NULL,
+  `image_url` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +39,7 @@ CREATE TABLE `goods` (
 
 LOCK TABLES `goods` WRITE;
 /*!40000 ALTER TABLE `goods` DISABLE KEYS */;
-INSERT INTO `goods` VALUES (1,'TestGood','TestType',15,35);
+INSERT INTO `goods` VALUES (1,'TestGood','TestType',15,35,NULL),(2,'Apples','Food',125,65,'https://raw.githubusercontent.com/Slavianskii/InternetShop/main/Image_source/apples.jpg?token=AVYEHPRAL5W3SZUIPUM2XPDBTJXBS');
 /*!40000 ALTER TABLE `goods` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-17 19:15:51
+-- Dump completed on 2021-11-21 19:09:15
